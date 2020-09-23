@@ -1,10 +1,10 @@
 import {books} from "./books.js";
 
-
-
 function createListOfBooks(books) {
 
-    const bookListSection = document.querySelector("#list");
+    const bookListSection = document.querySelector(".list");
+    console.log(bookListSection)
+
     const title = document.createElement("h2");
     const titleText = document.createTextNode("Suggested Reading");
     const booksDiv = document.createElement("div");
@@ -51,6 +51,7 @@ function createListOfBooks(books) {
     });
     
     title.appendChild(titleText);
+    debugger
     bookListSection.appendChild(title);
     bookListSection.appendChild(booksDiv);
 
