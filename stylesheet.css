@@ -136,13 +136,14 @@ a {
 }
 
 
-.grid-book {
+/* .grid-book  */
+.book{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 80px
+    grid-gap: 20px
 }
 
-
+/* searchbar */
 
 a {
     color: #333;
@@ -200,12 +201,13 @@ h2 {
 
 .description {
     text-align: left;
+    
 }
 
 
 
-img {
-    margin-bottom: 20px;
+.img {
+    margin-bottom: 30px;
 }
 
 #logo {
@@ -230,7 +232,7 @@ img {
     color: #494ca2;
 }
 
-.price:hover {
+.book.price:hover {
     text-decoration: underline;
 }
 

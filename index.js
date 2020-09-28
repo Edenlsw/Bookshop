@@ -2,12 +2,16 @@ import {books} from "./books.js";
 
 function createListOfBooks(books) {
 
+   
+
     const bookListSection = document.querySelector(".list");
     console.log(bookListSection)
 
     const title = document.createElement("h2");
     const titleText = document.createTextNode("Suggested Reading");
     const booksDiv = document.createElement("div");
+
+    
 
     books.map((book) => {
         const bookDivItem = document.createElement("div");
@@ -16,10 +20,12 @@ function createListOfBooks(books) {
         const bookImage = document.createElement("img");
         bookImage.src = book.image;
         bookImage.alt = book.name;
+        bookImage.className = "img"
     
         const bookContentDiv = document.createElement("div");
         const bookTitle = document.createElement("h2");
-        bookTitle.title = book.name;
+        bookTitle.className = 'book.name';
+        bookTitle.textContent = book.name;
     
         const bookAuthor = document.createElement("p");
         bookAuthor.className = "author";
@@ -36,6 +42,9 @@ function createListOfBooks(books) {
         const buttonDiv = document.createElement("div");
         const addBookbtn = document.createElement("button");
         addBookbtn.className = "addbtn"; 
+        
+        
+        
     
         bookContentDiv.appendChild(bookTitle);
         bookContentDiv.appendChild(bookAuthor);

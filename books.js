@@ -6,6 +6,7 @@ export const books = [
         description: 
         "The chilling Saga of Darren Shan, the ordinary schoolboy plunged into the vampire world. Darren goes to a banned freak show with his best mate Steve. It's the wonderfully gothic Cirque Du Freak where weird, frightening half human/half animals appear who interact terrifyingly with the audience.",
         image: "https://assets.whsmith.co.uk/product-image/extra-large/9780006755135-10-000_1.jpg",
+        button: "+Add",
     },
 
     {
