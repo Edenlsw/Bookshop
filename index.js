@@ -9,6 +9,7 @@ function createListOfBooks(books) {
 
     const title = document.createElement("h2");
     const titleText = document.createTextNode("Suggested Reading");
+    titleText.className = "heading"
     const booksDiv = document.createElement("div");
 
     
@@ -41,7 +42,8 @@ function createListOfBooks(books) {
     
         const buttonDiv = document.createElement("div");
         const addBookbtn = document.createElement("button");
-        addBookbtn.className = "addbtn"; 
+        addBookbtn.className = "addbtn";
+        addBookbtn.textContent = book.button; 
         
         
         
@@ -50,6 +52,7 @@ function createListOfBooks(books) {
         bookContentDiv.appendChild(bookAuthor);
         bookContentDiv.appendChild(bookPrice);
         bookContentDiv.appendChild(bookDescription);
+        
     
         bookDivItem.appendChild(bookImage);
         bookDivItem.appendChild(bookContentDiv);
